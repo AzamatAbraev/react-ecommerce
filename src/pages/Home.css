@@ -1,0 +1,125 @@
+p {
+  margin-bottom: 0;
+}
+
+.products-header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  .products-title {
+    color: #11142d;
+    font-size: 31px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0.155px;
+  }
+}
+
+.products-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+
+  .product-card {
+    border-radius: 30px;
+    text-decoration: none;
+    background: #fff;
+    box-shadow: 0px 7px 10px 3px rgba(0, 0, 0, 0.25);
+    /* padding: 10px; */
+    .card-image {
+      position: relative;
+      width: 100%;
+
+      .card-img {
+        position: relative;
+        width: 100%;
+        height: 500px;
+        object-fit: contain;
+        object-position: center;
+        /* padding: 10px; */
+        /* background-color: red; */
+      }
+    }
+
+    .product-price-id {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .card-category {
+      position: absolute;
+      border-radius: 8px;
+      bottom: 0px;
+      left: 40px;
+      display: inline-block;
+      color: #9a9ab0;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 110%;
+      letter-spacing: 0.096px;
+      padding: 14px 16px;
+      color: #fff;
+      background-color: red;
+      margin-bottom: 0;
+    }
+
+    .card-content {
+      padding: 30px;
+      /* background-color: #fff;
+      filter: drop-shadow(6px 10px 25px rgba(0, 0, 0, 0.1)); */
+    }
+
+    .product-title {
+      color: #000;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 120%;
+      text-transform: capitalize;
+    }
+
+    .product-description {
+      color: #333;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 120%;
+    }
+
+    .product-price {
+      color: #941b0c;
+      text-align: right;
+      font-size: 38px;
+      font-weight: 500;
+      line-height: 120%;
+      margin-bottom: 0;
+      vertical-align: bottom;
+      margin-bottom: 10px;
+    }
+
+    .rating,
+    .product-stock {
+      color: #000;
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    .product-id {
+      color: #808080;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 180%;
+    }
+  }
+}
+
+@media (max-width: 990px) {
+  .products-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .card-content {
+    padding: 20px;
+  }
+}
